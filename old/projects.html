@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Artem Petrov</title>
+    <title>Bootstrap 4 Portfolio Template For Developers</title>
 
     <!-- Meta -->
     <meta charset="utf-8">
@@ -10,11 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Responsive Portfolio Template">
     <meta name="author" content="Xiaoying Riley at 3rd Wave Media">
-
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-    <link rel="manifest" href="site.webmanifest">
+    <link rel="shortcut icon" href="favicon.ico">
 
     <!-- Google Font -->
     <link
@@ -24,14 +20,9 @@
     <!-- FontAwesome JS -->
     <script defer src="assets/fontawesome/js/all.js"></script>
 
-    <!-- Plugins CSS -->
-    <link rel="stylesheet" href="assets/plugins/flickity/flickity.min.css">
-
 
     <!-- Theme CSS -->
     <link id="theme-style" rel="stylesheet" href="assets/css/theme-2.css">
-
-    <link id="theme-style" rel="stylesheet" href="assets/css/my.css">
 
 </head>
 
@@ -62,12 +53,13 @@
 
                     <div class="collapse navbar-collapse text-uppercase" id="navigation">
                         <ul class="navbar-nav ml-lg-auto">
-                            <li class="nav-item active mr-lg-3">
-                                <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
+                            <li class="nav-item mr-lg-3">
+                                <a class="nav-link" href="index.html">Home</a>
                             </li>
-                            <!-- <li class="nav-item mr-lg-3">
-                                <a class="nav-link" href="projects.html">Projects</a>
-                            </li> -->
+                            <li class="nav-item active mr-lg-3">
+                                <a class="nav-link" href="projects.html">Projects<span
+                                        class="sr-only">(current)</span></a>
+                            </li>
                             <li class="nav-item mr-lg-3">
                                 <a class="nav-link" href="resume.html">Resume</a>
                             </li>
@@ -87,23 +79,8 @@
 
         <div class="header-intro theme-bg-primary text-white py-5">
             <div class="container">
-                <div class="profile-teaser media flex-column flex-md-row">
-                    <img class="profile-image mb-3 mb-md-0 mr-md-5 ml-md-0 rounded mx-auto"
-                        src="assets/images/profile.jpg" alt="">
-                    <div class="media-body text-center text-md-left">
-                        <div class="lead">Hello, my name is</div>
-                        <h2 class="mt-0 display-4 font-weight-bold">Artem Petrov</h2>
-                        <div class="bio mb-3">I'm a data scientist and software developer.<br />
-                            Please check out my <a class="link-on-bg" href="#projects">projects</a> and 
-                            <a class="link-on-bg" href="resume.html">resume</a>.
-                        </div>
-                        <!--//bio-->
-                        <!-- <a class="theme-btn-on-bg btn font-weight-bold theme-btn-cta" href="contact.html">Hire Me</a> -->
-
-                    </div>
-                    <!--//media-body-->
-                </div>
-                <!--//profile-teaser-->
+                <h2 class="page-heading mb-3">Projects</h2>
+                <div class="page-heading-tagline">Take a look at the demos of my pet projects.</div>
 
             </div>
             <!--//container-->
@@ -113,61 +90,8 @@
     </header>
     <!--//header-->
 
-    <section class="skills-section section py-5">
+    <section class="section pt-5">
         <div class="container">
-            <h3 class="section-title font-weight-bold text-center mb-3">Skills Overview</h3>
-
-            <div class="skills-blocks mx-auto pt-5">
-                <div class="row justify-content-md-center">
-                    <div class="skills-block col-8 col-lg-4 mb-5 mb-3 mb-lg-0">
-                        <div class="skills-block-inner bg-white shadow-sm py-4 px-5 position-relative">
-                            <h4 class="skills-cat text-center mb-3 mt-5">Data Science</h4>
-                            <div class="skills-icon-holder position-absolute d-inline-block rounded-circle text-center">
-                                <img class="skills-icon" src="assets/images/frontend-icon.svg">
-                            </div>
-                            <ul class="skills-list list-unstyled text-secondary">
-                                <li class="mb-2"><i class="fas fa-check mr-2 text-primary"></i>pandas, jupyter</li>
-                                <li class="mb-2"><i class="fas fa-check mr-2 text-primary"></i>scikit-learn</li>
-                                <li class="mb-2"><i class="fas fa-check mr-2 text-primary"></i>Keras, Metabase</li>
-                                <li class="mb-2"><i class="fas fa-check mr-2 text-primary"></i>recommender systems</li>
-                                <li class="mb-2"><i class="fas fa-check mr-2 text-primary"></i>scraping, regex</li>
-                            </ul>
-                        </div>
-                        <!--//skills-block-inner-->
-                    </div>
-                    <!--//skills-block-->
-
-                    <div class="skills-block col-8 col-lg-4 mb-5 mb-3 mb-lg-0">
-                        <div class="skills-block-inner bg-white shadow-sm py-4 px-5 position-relative">
-                            <h4 class="skills-cat text-center mb-3 mt-5">Software Development</h4>
-                            <div class="skills-icon-holder position-absolute d-inline-block rounded-circle text-center">
-                                <img class="skills-icon" src="assets/images/backend-icon.svg">
-                            </div>
-                            <ul class="skills-list list-unstyled text-secondary">
-                                <li class="mb-2"><i class="fas fa-check mr-2 text-primary"></i>Python, Flask, Django
-                                </li>
-                                <li class="mb-2"><i class="fas fa-check mr-2 text-primary"></i>PostgreSQL, MySQL,
-                                    MongoDB</li>
-                                <li class="mb-2"><i class="fas fa-check mr-2 text-primary"></i>HTML/CSS</li>
-                                <li class="mb-2"><i class="fas fa-check mr-2 text-primary"></i>bash, git</li>
-                                <li class="mb-2"><i class="fas fa-check mr-2 text-primary"></i>Docker</li>
-                            </ul>
-                        </div>
-                        <!--//skills-block-inner-->
-                    </div>
-                    <!--//skills-block-->
-                </div>
-                <!--//row-->
-            </div>
-        </div>
-        <!--//container-->
-    </section>
-    <!--//skills-section-->
-
-
-    <section class="section-featured-projects py-5" id="projects">
-        <div class="container">
-            <h3 class="section-title font-weight-bold text-center mb-5">Projects</h3>
 
             <div class="project-cards row mb-5">
                 <div class="col-12 col-lg-4">
@@ -205,7 +129,7 @@
                     <div class="card rounded-0 border-0 shadow-sm mb-5 mb-lg-0">
                         <div class="card-img-container position-relative">
                             <img class="card-img-top rounded-0" src="assets/images/projects/project-2-thumb.jpg" alt="">
-                            <a class="card-img-overlay overlay-content text-left p-lg-4" href="project.html">
+                            <a class="card-img-overlay overlay-content text-left p-lg-4" href="#">
                                 <p class="card-text">Using the <i>MovieLens dataset</i> to train a collaborative
                                     filtering recommender model (based on cosine similarity) and suggest movies to the
                                     users.</p>
@@ -262,14 +186,12 @@
 
             </div>
             <!--//row-->
-            <!-- TODO: Add this button later when the number of projects grows -->
-            <!-- <div class="text-center">
-                <a class="btn btn-primary" href="projects.html">View all projects</a>
-            </div> -->
-        </div>
-        <!--///container-->
 
+        </div>
+        <!--//container-->
     </section>
+    <!--//section-->
+
 
     <section class="section-cta py-5 bg-primary text-white">
         <div class="container">
@@ -280,7 +202,7 @@
             <h3 class="section-title font-weight-bold text-center mb-2">Interested in talking to me?</h3>
             <div class="section-intro mx-auto text-center mb-3">
                 Just drop me an email at <a class="link-on-bg"
-                    href="mailto:artem343p+cv@gmail.com">artem343p@gmail.com</a>
+                    href="mailto:artem343p+cv@gmail.com">artem343p@gmail.com</a>!
             </div>
         </div>
         <!--//container-->
@@ -291,23 +213,19 @@
                 target="_blank">3rd Wave Media</a></small>
     </footer>
 
-
     <!-- Javascript -->
     <script type="text/javascript" src="assets/plugins/jquery-3.4.1.min.js"></script>
     <script type="text/javascript" src="assets/plugins/popper.min.js"></script>
     <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="assets/plugins/back-to-top.js"></script>
 
-    <!-- Page Specific JS -->
-    <script type="text/javascript" src="assets/plugins/flickity/flickity.pkgd.min.js"></script>
+    <!--Page Specific JS -->
+    <script type="text/javascript" src="assets/plugins/imagesloaded.pkgd.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/isotope.pkgd.min.js"></script>
 
     <!-- Custom JS -->
     <script type="text/javascript" src="assets/js/main.js"></script>
-    <script type="text/javascript" src="assets/js/flickity-custom.js"></script>
-
-    <!-- Style Switcher (REMOVE ON YOUR PRODUCTION SITE) -->
-    <script type="text/javascript" src="assets/js/demo/style-switcher.js"></script>
-
+    <script type="text/javascript" src="assets/js/isotope-custom.js"></script>
 
 </body>
 
